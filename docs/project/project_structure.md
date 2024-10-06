@@ -19,14 +19,18 @@
     - `aircraft_design_excellent.md`:飞行器设计与工程（卓越人才培养班）导航
 === "`courses`：课程经验"
     !!! note
-        每个文件夹下的md文件是单个课程的经验分享，文件名为课程名直译，如工程训练为`EngineeringTraining.md`，这类文件的标准写法请参看[课程分享标准写法](./courses_standard.md){:target="_blank"}
+        每个文件夹下的md文件是单个课程的经验分享，文件名为课程名直译，如工程训练为`EngineeringTraining.md`，这类文件必须先在draft中写好留档，再移植到这里
     - `GeneralCompulsory`: 通识必修课程文件夹
     - `MajorCompulsory`: 专业必修课程课程文件夹
     - `MajorElective`: 专业选修课程文件夹
     - `MajorFoundation`: 通识选修课程文件夹
+    - `.template.md`: 建设中课程的模板,之所以前面加点是为了防止mkdocs报错
+    - `.courseLoad.js`: nodejs自动生成markdown树，并写入模板，之所以前面加点是为了防止mkdocs报错
 ### 其他`docs/`下的md文件
 - `index.md`:主页
 - `friend.md`: 友情链接
 - `leap.md`: 飞跃手册
+## `draft`: 草稿文件夹
+初稿要先存放在这里，待完善后再移动到`docs`文件夹下，这类文件的标准写法请参看[课程分享标准写法](./courses_standard.md){:target="_blank"}
 ## `mkdocs.yml`
 [mkdocs配置文件](./mkdocs_yml.md){:target="_blank"}

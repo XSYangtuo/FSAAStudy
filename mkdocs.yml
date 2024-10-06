@@ -1,4 +1,4 @@
-site_name: FSAA手册
+site_name: FSAA工作手册
 theme:
   name: material
   features:
@@ -31,7 +31,7 @@ plugins:
         - ja
       separator: '[\s\u200b\-]'
 nav:
-  - FSAA手册: index.md
+  - FSAA工作手册: index.md
   - 教程:
     - 开发软件: tutorial/softwares.md
     - 配置环境: tutorial/environment.md
@@ -41,3 +41,4 @@ nav:
     - 项目目录结构: project/project_structure.md
     - mkdocs.yml: project/mkdocs_yml.md
     - 课程分享标准写法: project/courses_standard.md
+    - 工作流: project/workflow.md
