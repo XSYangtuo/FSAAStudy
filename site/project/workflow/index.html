@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../project_structure/">
+        <link rel="prev" href="../courses_standard/">
       
-      
-        <link rel="next" href="../courses_standard/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>mkdocs.yml - FSAA工作手册</title>
+        <title>工作流 - FSAA工作手册</title>
       
     
     
@@ -62,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mkdocsyml" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              mkdocs.yml
+              工作流
             
           </span>
         </div>
@@ -476,19 +474,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../mkdocs_yml/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -497,7 +486,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -528,10 +516,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../workflow/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    工作流
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -540,6 +548,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    <span class="md-ellipsis">
+      无Git课程书写
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      有Git课程书写
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      课程信息更新（需要Git）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      建设中的课程模板修改（需要node.js环境）
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -567,8 +631,50 @@
                   
 
 
-<h1 id="mkdocsyml">mkdocs.yml</h1>
-<p>已经在yml中写了注释，这里就不写了，注意每次需要更新的时候要在工作日志中写出！</p>
+<h1 id="_1">工作流</h1>
+<h2 id="git">无Git课程书写</h2>
+<ol>
+<li>创建空Mkdocs项目，具体做法：<a href="../../tutorial/mkdocs/" target="_blank">本站Mkdocs教程</a></li>
+<li>把项目mkdocs.yml的内容复制到对应mkdocs.yml文件中</li>
+<li>在docs目录下任意创建.md文件寻找相应资料开始整理书写（过程中通过网页查看写作效果）<a href="../courses_standard/" target="_blank">书写规范</a></li>
+<li>整理完成后，把.md文件发送给可以进行Git的同事，由ta帮助上传整理</li>
+<li>进行相应的登记</li>
+</ol>
+<h2 id="git_1">有Git课程书写</h2>
+<ol>
+<li>直接从ZJU Git获取项目，要完成环境配置</li>
+<li>开始写作前在群里说明要写作的课程，避免冲突！</li>
+<li>在draft目录下创建正确文件名的markdown，开始整理书写（过程中通过网页查看写作效果）<a href="../courses_standard/" target="_blank">书写规范</a>（如果有人把md传给你，也请你合并在draft下）</li>
+<li>draft完成后整理至对应的courses下的文件，并在draft中用注释写明“已加入版面”！如果是产生修改，在完成修改前要把注释去掉！</li>
+<li>draft书写完毕即可排版至courses下</li>
+<li>不论是仅仅完成draft还未排版至courses下，还是已经排版至courses下，都要可以进行pull、commit、push操作，commmit信息写明“日期，完成内容，操作人（可以用简称）”</li>
+<li>解决冲突的时候一定要汇报！</li>
+<li>进行相应的登记，有能力的同学可以尝试进行课程信息更新</li>
+</ol>
+<h2 id="git_2">课程信息更新（需要Git）</h2>
+<ol>
+<li>打开courseNav/coursesData.js</li>
+<li>找到coursesAll变量中的课程名对应的内容，更新课程信息（大部分情况都是更新加*的内容）：
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;课程名&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;credit&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="c1">//学分，不用改</span>
+<span class="w">    </span><span class="nt">&quot;difficulty&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="c1">//*难度，从1开始数分别是水/略学/考前突击/长期努力/捞捞/死/抽象，可以根据几篇投稿酌情判定</span>
+<span class="w">    </span><span class="nt">&quot;term&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;一(秋冬)&quot;</span><span class="p">,</span><span class="c1">//建议学年学期</span>
+<span class="w">    </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;建设中&quot;</span><span class="p">,</span><span class="c1">//*建设状态，有n篇完整就写n篇完整，还可以加上较新较旧等形容</span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="c1">//唯一识别ID，不用改</span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;通识必修课程&quot;</span><span class="p">,</span><span class="c1">//类型，不用改</span>
+<span class="w">    </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;GeneralCompulsory/LinearAlgebraIH&quot;</span><span class="c1">// 路径，不用改</span>
+<span class="p">}</span>
+</code></pre></div></li>
+<li>保存并提交，如果遇到冲突要妥善处理！最好在群里说明！</li>
+</ol>
+<h2 id="nodejs">建设中的课程模板修改（需要node.js环境）</h2>
+<ol>
+<li>打开<code>courses/.template.md</code>修改需要修改的部分</li>
+<li><strong>检查课程信息更新是否已经完成，并且在群中询问</strong></li>
+<li>打开<code>courses/.courseLoad.js</code>把coursesAll变量中的内容替换成<code>coursesNav/coursesData.js</code>中的coursesAll变量，<strong>程序运行后“建设中”的课程将会被写入.template.md文件的内容</strong></li>
+<li>cd 至<code>courses</code>目录下，运行<code>node .courseLoad.js</code>，看到文件树建立成功的提示说明已经完成。</li>
+</ol>
 
 
 
@@ -604,7 +710,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../project_structure/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 项目目录结构">
+          <a href="../courses_standard/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 课程分享标准写法">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -614,27 +720,11 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                项目目录结构
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../courses_standard/" class="md-footer__link md-footer__link--next" aria-label="Next: 课程分享标准写法">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
                 课程分享标准写法
               </div>
             </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
           </a>
+        
         
       </nav>
     

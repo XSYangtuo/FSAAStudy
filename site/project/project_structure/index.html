@@ -20,7 +20,7 @@
     
     
       
-        <title>项目目录结构 - FSAA手册</title>
+        <title>项目目录结构 - FSAA工作手册</title>
       
     
     
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="FSAA手册" class="md-header__button md-logo" aria-label="FSAA手册" data-md-component="logo">
+    <a href="../.." title="FSAA工作手册" class="md-header__button md-logo" aria-label="FSAA工作手册" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -92,7 +92,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            FSAA手册
+            FSAA工作手册
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -173,7 +173,7 @@
   
     
   
-  FSAA手册
+  FSAA工作手册
 
       </a>
     </li>
@@ -248,13 +248,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="FSAA手册" class="md-nav__button md-logo" aria-label="FSAA手册" data-md-component="logo">
+    <a href="../.." title="FSAA工作手册" class="md-nav__button md-logo" aria-label="FSAA工作手册" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    FSAA手册
+    FSAA工作手册
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -270,7 +270,7 @@
         
   
   <span class="md-ellipsis">
-    FSAA手册
+    FSAA工作手册
   </span>
   
 
@@ -537,6 +537,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#draft" class="md-nav__link">
+    <span class="md-ellipsis">
+      draft: 草稿文件夹
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#mkdocsyml" class="md-nav__link">
     <span class="md-ellipsis">
       mkdocs.yml
@@ -587,6 +596,27 @@
   
   <span class="md-ellipsis">
     课程分享标准写法
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    工作流
   </span>
   
 
@@ -649,13 +679,15 @@
 <div class="tabbed-block">
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>每个文件夹下的md文件是单个课程的经验分享，文件名为课程名直译，如工程训练为<code>EngineeringTraining.md</code>，这类文件的标准写法请参看<a href="../courses_standard/" target="_blank">课程分享标准写法</a></p>
+<p>每个文件夹下的md文件是单个课程的经验分享，文件名为课程名直译，如工程训练为<code>EngineeringTraining.md</code>，这类文件必须先在draft中写好留档，再移植到这里</p>
 </div>
 <ul>
 <li><code>GeneralCompulsory</code>: 通识必修课程文件夹</li>
 <li><code>MajorCompulsory</code>: 专业必修课程课程文件夹</li>
 <li><code>MajorElective</code>: 专业选修课程文件夹</li>
 <li><code>MajorFoundation</code>: 通识选修课程文件夹</li>
+<li><code>.template.md</code>: 建设中课程的模板,之所以前面加点是为了防止mkdocs报错</li>
+<li><code>.courseLoad.js</code>: nodejs自动生成markdown树，并写入模板，之所以前面加点是为了防止mkdocs报错</li>
 </ul>
 </div>
 </div>
@@ -666,6 +698,8 @@
 <li><code>friend.md</code>: 友情链接</li>
 <li><code>leap.md</code>: 飞跃手册</li>
 </ul>
+<h2 id="draft"><code>draft</code>: 草稿文件夹</h2>
+<p>初稿要先存放在这里，待完善后再移动到<code>docs</code>文件夹下，这类文件的标准写法请参看<a href="../courses_standard/" target="_blank">课程分享标准写法</a></p>
 <h2 id="mkdocsyml"><code>mkdocs.yml</code></h2>
 <p><a href="../mkdocs_yml/" target="_blank">mkdocs配置文件</a></p>
 
