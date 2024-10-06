@@ -1,0 +1,43 @@
+site_name: FSAA手册
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
+    - navigation.path
+    - toc.integrate
+    - toc.follow
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.share
+    - search.suggest
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.tabbed:
+      alternate_style: true
+plugins:
+  - tags
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+        - ja
+      separator: '[\s\u200b\-]'
+nav:
+  - FSAA手册: index.md
+  - 教程:
+    - 开发软件: tutorial/softwares.md
+    - 配置环境: tutorial/environment.md
+    - Markdown: tutorial/markdown.md
+    - Mkdocs: tutorial/mkdocs.md
+  - 项目规划:
+    - 项目目录结构: project/project_structure.md
+    - mkdocs.yml: project/mkdocs_yml.md
+    - 课程分享标准写法: project/courses_standard.md
